@@ -1,0 +1,204 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family:Anton;
+    src: url(anton.ttf);
+}
+.main{
+    height: 70vh;
+    width: 74vw;
+    border: solid 4px orange;
+    border-radius: 35px;
+    position: relative;
+    justify-content: center;
+    top: 15vh;
+    left: 12vw;
+    padding:3vw;
+
+}
+
+.main form{
+    float: right;
+    height: 100%;
+    width: 30%;
+    padding: 2vw;
+    position: relative;
+    top: 13px;
+}
+.main form h4{
+    font-size:34px;
+    font-family: anton;
+    font-weight: 400;
+    font-style: normal;
+    color: #B97905;
+    text-align: center;
+}
+.main form input{
+    width: 100%;
+    margin-bottom: 22px;
+    padding: 5px;
+}
+#username{
+    margin-top: 35px;
+}
+.main form input:focus{
+    outline: none;
+}
+#email ,#username ,#password{
+    background-color: #d9d9d9;
+    border: solid 3px transparent;
+    border-radius: 9px;
+}
+#signin{
+    width: 70%;
+    margin-left:13.5% ;
+    background-color: #C3881C;
+    border: solid 3px transparent;
+    border-radius:35px;
+    margin-top: 10px;
+}
+#eror{
+    height: 35px;
+}
+#repassword{
+    color: blue;
+   
+}
+form span#repassword {
+    text-align: center;
+    padding-left:0% ;
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.491);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+.overlay .resetpassword{
+    width: 30%;
+    height: 70%;
+    padding:60px 50px;
+    background-color: white;
+    position: fixed;
+    left: 35%;
+    border-radius: 15px;
+    top: 15%;
+}
+.overlay .resetpassword h4{
+    font-family: Anton;
+    color: #B97905;
+    font-style: normal;
+    text-align: center;
+    font-size:34px;
+    font-weight: 400;
+}
+.overlay span{
+    float: right;
+    margin-top: -35px;
+}
+.overlay span#erorico svg{
+    margin-right: 10px  ;
+}
+.overlay form{
+    padding-left: 20px;
+    margin-top: 35px;
+}
+.overlay form input{
+    width: 90%;
+    height: 38px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    background-color: rgba(159, 159, 159, 0.435);
+    border: 3px solid transparent;
+    border-radius:7px;
+}
+#resbtn{
+    width: 50%;
+    margin-left:20% ;
+    padding-left:2px;
+    background-color: #C3881C;
+    border: solid 3px transparent;
+    border-radius:35px;
+    margin-top: 10px;
+
+}
+*::selection{
+    background-color:transparent;
+}
+#eroroverlay{
+    position: absolute;
+    top: 33%;
+    left: 30%;
+    color: red;
+}
+#erorico{
+    float: left;
+
+}
+@media screen and (max-width:1423px){
+    .main{
+        height: 80vh;
+        justify-content: center;
+    }
+    .leftpic{
+        height: 190px;
+        width: 40%;
+        max-width: 250px;
+        min-width: 150px;
+        z-index: 1;
+        position: absolute;
+        left: 33%;
+    }
+    #rightform{
+        width: 70%;
+        position: absolute;
+        top:30%;
+        left:17%;
+    }
+    .main form h4{
+        display: none;
+    }
+    .overlay .resetpassword{
+        width: 60%;
+        min-width: 350px;
+        max-height: 600px;
+        height: 80vh;
+        left: 20%;
+        top: 25%;
+    }
+    #eroroverlay{
+        position: absolute;
+        top: 29%;
+        left: 25%;
+        color: red;
+    }
+}
+@media screen and (max-width:767px) {
+    .leftpic{
+        left: 30%;
+    }
+    .overlay .resetpassword{
+        width: 50%;
+        min-width: 350px;
+        max-height: 600px;
+        height: 80vh;
+        left: 5%;
+        top: 15%;
+    }
+    #eroroverlay{
+        position: absolute;
+        top: 29%;
+        left: 25%;
+        color: red;
+    }
+    
+}
+.overlay input:focus{
+    outline: transparent;
+}

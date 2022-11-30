@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scherlock Lite</title>
+    <link rel="icon" href="assets/logoonly.png">
+    <link rel="stylesheet" href="cssfiles/all.css">
+    <link rel="stylesheet" href="cssfiles/all.min.css">
+    <link rel="stylesheet" href="cssfiles/bootstrap.min.css">
+    <link rel="stylesheet" href="cssfiles/bootstrap.min.css.map">
+    <link rel="stylesheet" href="cssfiles/indexstyle.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ged8xjh.css">
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <div class="resetpassword" id="repass">
+            <span onclick="canceloverlay()"><i class="fa-solid fa-xmark fa-2xl"></i></span>
+            <h4>Scherlock lite</h4>
+            <form id="overlayform">
+                <span id="eroroverlay">
+                    <span id="eroroverlay1">  </span>
+                    <span id="erorico">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                    </span>
+                </span>
+                <h6>Username</h6>
+                <input type="text" placeholder="User-Name" id="resuser">
+                <h6>E-mail</h6>
+               <input type="email"  id="resemail" placeholder="E-mail" required> 
+                <h6>Password</h6>
+                <input type="password" placeholder="Password" id="respass">
+                <h6>Re-Enter password</h6>
+                <input type="password" placeholder="Re-password" id="repass1" ><br>
+                <input type="button" value="Reset" id="resbtn"> 
+            </form>
+        </div>
+    </div>
+        <div class="main">
+        <img src="assets/fullwithoutbg.png" alt="Our logo here" class="leftpic">
+            <form id="rightform">
+            <h4>Scherlock lite</h4>
+            <input type="text" name="Username" id="username" placeholder="Username">
+            <input type="email" name="Email" id="email" placeholder="E-mail" required>
+            <input type="password" name="Password" id="password" placeholder="password">
+            <div id="eror">
+            </div>
+            <center>
+            <span id="repassword">Forget password</span></center>
+            <input type="button" value="Sign in" id="signin">
+        </form>
+    </div>
+    <script src="jsfiles/indexmachine.js"></script>
+    <script src="jsfiles/all.min.js"></script>
+    <script src="jsfiles/bootstrap.bundle.min.js"></script>
+    <script src="jsfiles/bootstrap.bundle.min.js.map"></script>
+</body>
+</html>
