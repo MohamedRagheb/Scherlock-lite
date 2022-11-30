@@ -79,7 +79,7 @@ function addaccount(){
         eror.innerText = "";
 }
 function open(){
-    window.location.href = 'htmlfiles/mainpage.html';
+    window.location.href = '/htmlfiles/mainpage.html';
 
     password.value = "";
     username.value = "";
