@@ -10,7 +10,7 @@ const platform = [
     {name:"Twitter",color:"lightblue", link:`https://twitter.com/`},
     {name:"Youtupe",color:"red", link:`https://www.youtube.com/`},
     {name:"Reddit",color:"red", link:`https://www.reddit.com/user/`},
-    {name:"Linked In",color:"red", link:`https://www.linkedin.com/in/`},
+    {name:"Linked In",color:"blue", link:`https://www.linkedin.com/in/`},
 
 ]  
 
