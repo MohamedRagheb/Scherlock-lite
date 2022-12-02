@@ -54,7 +54,7 @@ username.oninput = function(){
                 formbtn.disabled = false;
             }else{
                  eror.innerText = "";
-                formbtn.disabled = true;
+                // formbtn.disabled = true;
                 
             }
         }
@@ -67,7 +67,11 @@ repassword.onclick = () => {
      
 };
 function canceloverlay(){
-        overlay.style.display = "none"
+        overlay.style.display = "none";
+             overenmail.value = "";
+            overpassword.value = "";
+            overpassword1.value = "";
+            overusername.value = "";
 };
 function addaccount(){
     users.push({name:username.value , password:password.value , email:email.value})
